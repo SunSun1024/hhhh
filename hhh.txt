@@ -1,0 +1,7 @@
+git clone https://github.com/gxf1027/randomforests.git
+cd randomforests
+# g++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+# train
+g++ -fpermissive -std=c++11 -O2  src/RandomCLoquatForests.cpp src/RandomRLoquatForests.cpp src/UserInteraction2.cpp src/SharedRoutines.cpp src/tinyxml2/tinyxml2.cpp demo/rf_train.cpp  -o rf_train
+# test
+g++ -fpermissive -std=c++11 -O2 src/RandomCLoquatForests.cpp src/RandomRLoquatForests.cpp src/UserInteraction2.cpp  src/SharedRoutines.cpp src/tinyxml2/tinyxml2.cpp demo/rf_test.cpp  -o rf_test
